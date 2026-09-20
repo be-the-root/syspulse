@@ -1,45 +1,71 @@
-SysPulse Core - Network Diagnostic & Telemetry Suite
+```markdown
+# DarkHell Recon
 
-Hi guys! Welcome to my open-source githup proejct. This is a python script I made to help check network health, run pings, and do nmap scans easily. It automatically saves everything into a nice JSON report so you can look at it later or show it to your boss!
+A Python-based automated terminal framework for network reconnaissance, web enumeration, and security auditing.
 
-Features:
+## Description
 
-    Profile 1: Quick Ping & Latency diagnostics for fast checks.
+DarkHell is designed to streamline security auditing by organizing common command-line enumeration tools—such as Nmap, SQLMap, Gobuster, Nikto, and SSLScan—into a structured interactive menu and command-line automation framework. Built for security lab environments and authorized penetration testing workflows, it wraps complex syntax into modular execution commands to automate multi-stage scanning, port discovery, and application fingerprinting.
 
-    Profile 2: Advanced Port State & Service Verification (uses nmap to find open ports like 80, 443, 22).
+### Screenshots
 
-    Profile 3: Comprehensive Route Trace and full port sweep with OS fingerprinting!
+![DarkHell Terminal Scan](image_agent_tag_7325621398111242582)
 
-    Auto-Logging: Saves all results into a timestamped json file automatically.
+## Getting Started
 
-How to Install & Run:
-Make sure you have python3 and nmap installed on your Linux machine (it works great on Kali Linux or Ubuntu!).
+### Dependencies
 
-    Clone the repository:
-    git clone https://github.com/yourusername/syspulse.git
-    cd syspulse
+* Linux distribution (tested on Kali Linux, Debian, or Ubuntu)
+* Python 3.8 or higher
+* Installed CLI security utilities: `nmap`, `sqlmap`, `gobuster`, `nikto`, `sslscan`
 
-    Give execution permision to the script:
-    chmod +x syspulse.py
+### Installing
 
-    Run it (pleas run with sudo so nmap and raw sockets work properly!):
-    sudo ./syspulse.py
+* Clone the repository to your local machine:
+  ```bash
+  git clone [https://github.com/be-the-root/darkhell.git](https://github.com/be-the-root/darkhell.git)
 
-How to Use:
-When you run the script, it will ask you for a few things:
+```
 
-    Enter your target IP address, domain name, or CIDR range.
+* Navigate into the project directory:
+```bash
+cd syspulse
 
-    Select your audit intensity level (choose between 1, 2, or 3).
+```
 
-    Watch it do its magic and generate the report file!
 
-Requirements:
+* Grant execution permissions to the script:
+```bash
+chmod +x syspulse.py
 
-    Python 3.x
+```
 
-    Nmap installed (sudo apt install nmap)
 
-    Linux terminal (tested on Kali linux)
 
-Feel free to open an issue or pull request if you want to contribute or find any bugs!
+### Executing program
+
+* Launch the script with root privileges (required for raw sockets and privileged Nmap scans):
+```bash
+sudo python3 syspulse.py
+
+```
+
+
+* Enter your target IP address, domain name, or CIDR range when prompted.
+* Select your audit module or intensity level from the interactive menu.
+* Monitor the progress in real time as report outputs are generated.
+
+## Help
+
+Ensure `nmap` and required tools are installed on your PATH if the script throws execution errors:
+
+```bash
+sudo apt update && sudo apt install nmap sqlmap gobuster nikto sslscan -y
+
+```
+
+
+
+## License
+
+This project is made by me
