@@ -1,4 +1,4 @@
-```markdown
+
 # DarkHell Recon
 
 A Python-based automated terminal framework for network reconnaissance, web enumeration, and security auditing.
@@ -6,10 +6,6 @@ A Python-based automated terminal framework for network reconnaissance, web enum
 ## Description
 
 DarkHell is designed to streamline security auditing by organizing common command-line enumeration tools—such as Nmap, SQLMap, Gobuster, Nikto, and SSLScan—into a structured interactive menu and command-line automation framework. Built for security lab environments and authorized penetration testing workflows, it wraps complex syntax into modular execution commands to automate multi-stage scanning, port discovery, and application fingerprinting.
-
-### Screenshots
-
-![DarkHell Terminal Scan](image_agent_tag_7325621398111242582)
 
 ## Getting Started
 
