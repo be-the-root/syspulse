@@ -1,4 +1,3 @@
-
 # DarkHell Recon
 
 A Python-based automated terminal framework for network reconnaissance, web enumeration, and security auditing.
@@ -11,7 +10,7 @@ DarkHell is designed to streamline security auditing by organizing common comman
 
 ### Dependencies
 
-* Linux distribution (tested on Kali Linux, Debian, or Ubuntu)
+* Linux distribution (tested on Kali Linux, Debian, and Ubuntu)
 * Python 3.8 or higher
 * Installed CLI security utilities: `nmap`, `sqlmap`, `gobuster`, `nikto`, `sslscan`
 
@@ -20,36 +19,30 @@ DarkHell is designed to streamline security auditing by organizing common comman
 * Clone the repository to your local machine:
   ```bash
   git clone [https://github.com/be-the-root/darkhell.git](https://github.com/be-the-root/darkhell.git)
+  ```
 
-```
 
 * Navigate into the project directory:
 ```bash
 cd syspulse
-
 ```
-
 
 * Grant execution permissions to the script:
 ```bash
 chmod +x syspulse.py
-
 ```
-
-
 
 ### Executing program
 
 * Launch the script with root privileges (required for raw sockets and privileged Nmap scans):
 ```bash
 sudo python3 syspulse.py
-
 ```
-
 
 * Enter your target IP address, domain name, or CIDR range when prompted.
 * Select your audit module or intensity level from the interactive menu.
 * Monitor the progress in real time as report outputs are generated.
+
 
 ## Help
 
@@ -57,11 +50,9 @@ Ensure `nmap` and required tools are installed on your PATH if the script throws
 
 ```bash
 sudo apt update && sudo apt install nmap sqlmap gobuster nikto sslscan -y
-
 ```
-
 
 
 ## License
 
-This project is made by me
+This project is under a MIT License
